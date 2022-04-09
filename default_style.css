@@ -1,6 +1,7 @@
 /* Make watched icon dark and transparent */
 .playedIndicator {background: #00000058;}
 
+
 /* Replace "Latest Movies" text with Custom Text such as "Recently Added Movies" */
 #homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
 #homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
@@ -9,6 +10,7 @@ content: 'Recently Added Movies ›';
 font-size: 24px;
 font-weight: normal;
 }
+
 
 /* Replace Latest TV Shows text with Custom Text such as "Recently Added TV Shows" */
 #homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
@@ -19,6 +21,7 @@ font-size: 24px;
 font-weight: normal;
 }
 
+
 /* Login Page */
 #loginPage {
     /* Background Image on login page */
@@ -27,9 +30,9 @@ font-weight: normal;
     background-color: #191724;
 }
 
+
 /* Homepage */
 .backdropImage { display: none; }
-
 .backgroundContainer {
   background-color: #191724;
   /* Background Image on homepage */
@@ -38,12 +41,60 @@ font-weight: normal;
   background-size: cover;
 }
 
+
 /* Transparent Top Menu */
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
 .skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
+
 
 /* Image edge rounded */
 .cardContent-button,
 .itemDetailImage {
   border-radius: 0.25em;
 }
+
+
+/* Minimalist login page */
+/* Narrow the login form */
+#loginPage .readOnlyContent, #loginPage form {max-width: 22em;}
+/* Hide "please login" text, margin is to prevent login form moving too far up */
+#loginPage h1 {display: none}
+#loginPage .padded-left.padded-right.padded-bottom-page {margin-top: 50px}
+/* Hide "manual" and "forgot" buttons */
+#loginPage .raised.cancel.block.btnManual.emby-button {display: none}
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {display: none}
+
+
+/* Stylized Episode Previews */
+/* Size episode preview images in a more compact way */
+.listItemImage.listItemImage-large.itemAction.lazy {height: 110px;}
+.listItem-content {height: 115px;}
+.secondary.listItem-overview.listItemBodyText {height: 61px; margin: 0;}
+
+
+/* Center the mouseover buttons */
+#castContent .cardOverlayButton-br {bottom: 4%; right: 15%; width: 70%;}
+#castContent .cardOverlayButton.cardOverlayButton-hover.itemAction.paper-icon-button-light {margin:auto;}
+
+
+/* Custom background color */
+.backgroundContainer, .dialog, html { background-color: #191724; }
+
+
+/* Right header color. This modifies the colors of the cast, search and user buttons in the top right.*/
+.headerRight { color: #908caa; }
+
+/* Console Panel Custom Color
+Modifies the color of the left menu panel. */
+.mainDrawer-scrollContainer { color: #908caa; }
+
+/* General Page Custom Color */
+.dashboardGeneralForm { color: #908caa; }
+
+/* Custom Border Color */
+/* This will change the border color for text fields and drop-down menus. */
+.emby-input, .emby-textarea, .emby-select { border-color: #56526e; }
+/* This will affect the border color of highlighted (selected) text fields and drop-down menus. */
+
+/* Full Header Tweak */
+.skinHeader, .mainDrawer, .emby-input, .emby-textarea, .emby-select, .navMenuOption-selected, .cardBox, .paperList { background: #ff9475; }
