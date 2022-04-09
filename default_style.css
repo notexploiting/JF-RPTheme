@@ -1,0 +1,49 @@
+/* Make watched icon dark and transparent */
+.playedIndicator {background: #00000058;}
+
+/* Replace "Latest Movies" text with Custom Text such as "Recently Added Movies" */
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(1) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added Movies ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+/* Replace Latest TV Shows text with Custom Text such as "Recently Added TV Shows" */
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > h2 {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a > span {display: none;}
+#homeTab > div > div.section2 > div:nth-child(2) > div.sectionTitleContainer.sectionTitleContainer-cards.padded-left > a:after {
+content: 'Recently Added TV Shows ›';
+font-size: 24px;
+font-weight: normal;
+}
+
+/* Login Page */
+#loginPage {
+    /* Background Image on login page */
+    background: url("https://i.ytimg.com/vi/avCWDDox1nE/maxresdefault.jpg");
+    background-size: cover;
+    background-color: #191724;
+}
+
+/* Homepage */
+.backdropImage { display: none; }
+
+.backgroundContainer {
+  background-color: #191724;
+  /* Background Image on homepage */
+  /* background-image: url("https://i.ytimg.com/vi/avCWDDox1nE/maxresdefault.jpg"); */
+  filter: blur(10px);
+  background-size: cover;
+}
+
+/* Transparent Top Menu */
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred {background:none; background-color:rgba(0, 0, 0, 0);}
+.skinHeader.focuscontainer-x.skinHeader-withBackground.skinHeader-blurred.noHomeButtonHeader {background:none; background-color:rgba(0, 0, 0, 0);}
+
+/* Image edge rounded */
+.cardContent-button,
+.itemDetailImage {
+  border-radius: 0.25em;
+}
